@@ -6,7 +6,7 @@
     compose_project_name: "test_compose"
   tasks:
     - name: Test script hoooks
-      command: cd 12322
+      command: cd 1232212
 
     - name: Build and start Docker Compose project
       command: >
