@@ -3,7 +3,7 @@
   vars:
     compose_project_dir: "./"
     compose_file: "docker-compose.yml"
-    compose_project_name: "test_compose"
+    compose_project_name: "test_compose_1"
   tasks:
     - name: Build and start Docker Compose project
       command: >
