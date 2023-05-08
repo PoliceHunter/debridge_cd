@@ -21,7 +21,7 @@
          run: |
               ssh-keyscan -t rsa ${{ secrets.IP_ADDRESS }} >> ~/.ssh/known_hosts
               git remote add deploy ${{ secrets.USERNAME }}@${{ secrets.IP_ADDRESS }}:/home/mdev/server_git.git
-              git fetch --unshallow origin ${GITHUB_REF##*/}"
+              git fetch --unshallow origin ${GITHUB_REF##*/}
               git push deploy ${GITHUB_REF##*/}" --force
          env:
           SSH_PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
