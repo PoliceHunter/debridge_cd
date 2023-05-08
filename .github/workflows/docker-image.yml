@@ -2,9 +2,9 @@
 
  on:
    push:
-     branches: [ "master" ]
-   pull_request:
-     branches: [ "master" ]
+     branches: [ "master", "madrid", "mainnet" ]
+     tags: 
+      - '*'
  jobs:
    run-playbooks:
      runs-on: ubuntu-latest
