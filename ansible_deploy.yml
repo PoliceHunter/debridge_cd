@@ -10,4 +10,3 @@
         docker-compose -f {{ compose_project_dir }}/{{ compose_file }} -p {{ compose_project_name }} up -d --build
       args:
         chdir: "{{ compose_project_dir }}"
-
