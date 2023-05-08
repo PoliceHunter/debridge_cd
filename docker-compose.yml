@@ -5,7 +5,7 @@ services:
     ports:
       - "2020:2020"
     depends_on:
-      - mysql
+      - mysql:100.0.0
   mysql:
     image: mysql
     environment:
