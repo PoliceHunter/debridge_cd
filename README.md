@@ -1,2 +1,3 @@
 # debridge_cd
 
+mainnet
